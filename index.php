@@ -1,4 +1,6 @@
 <?php
+include "data.php";
+$rangers1 = $rangers[0];
 
 
 ?>
