@@ -1,18 +1,42 @@
 <?php
-include "data.php";
-$rangers1 = $rangers[0];
-
-
+include "header.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<table>
+    <thead>
+        <tr>
+            <th>Power rangers</th>
+            <th>Nb.d'épisodes</th>
+            <th>saisons</th>
+        </tr>
+    </thead>
+
+    <tbody>
+       <?php 
+        foreach($rangers as $ranger):
+                    
+          if (isset($_GET["Power rangers"]) && $ranger["Power rangers"]===$_GET["Power rangers"]) :
+                   
+        ?>
+
+        <tr>
+            <td><?= $ranger["Power rangers"] ?></td>
+            <td><?= $ranger["Nb.d'épisodes"] ?></td>
+            <td><?= $ranger["saisons"] ?></td>
+        </tr>
+     
+        <?php endif; 
+        if($_GET == []):
+            
+        ?>
+        
+        <tr>
+            <td><?= $ranger["Power rangers"] ?></td>
+            <td><?= $ranger["Nb.d'épisodes"] ?></td>
+            <td><?= $ranger["saisons"] ?></td>
+        </tr>
+        
+        <?php endif; endforeach
+        ?>
+    </tbody>
+</table>
