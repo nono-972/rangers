@@ -8,6 +8,7 @@ include "header.php";
             <th>Power rangers</th>
             <th>Nb.d'épisodes</th>
             <th>saisons</th>
+            <th>phrase iconic</th>
         </tr>
     </thead>
 
@@ -23,6 +24,7 @@ include "header.php";
             <td><?= $ranger["Power rangers"] ?></td>
             <td><?= $ranger["Nb.d'épisodes"] ?></td>
             <td><?= $ranger["saisons"] ?></td>
+            <td><?= $ranger["citations"] ?></td>
         </tr>
      
         <?php endif; 
@@ -34,6 +36,7 @@ include "header.php";
             <td><?= $ranger["Power rangers"] ?></td>
             <td><?= $ranger["Nb.d'épisodes"] ?></td>
             <td><?= $ranger["saisons"] ?></td>
+            <td><?= $ranger["citations"] ?></td>
         </tr>
         
         <?php endif; endforeach
