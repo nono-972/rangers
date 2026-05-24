@@ -12,6 +12,8 @@ include "data.php";
 <body>
     <header>
      <h1>3 Décennies de Rangers</h1>
+     <h2>Qu'est-ce qu'un Power Rangers ?</h2>
+
     </header>
 </body>
 <script src="script.js"></script>
