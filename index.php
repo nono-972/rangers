@@ -21,8 +21,8 @@ include "header.php";
         ?>
 
         <tr>
-            <td><?= $ranger["Power rangers"] ?></td>
-            <td><?= $ranger["Nb.d'épisodes"] ?></td>
+            <td> <img src="<?= $ranger["image"] ?>" alt=""> <?= $ranger["Power rangers"]  ?></td>
+            <td><a href=""><?= $ranger["Nb.d'épisodes"] ?></a></td>
             <td><?= $ranger["saisons"] ?></td>
             <td><?= $ranger["citations"] ?></td>
         </tr>
@@ -33,7 +33,7 @@ include "header.php";
         ?>
         
         <tr>
-            <td><?= $ranger["Power rangers"] ?></td>
+            <td><img src="<?= $ranger["image"] ?>" width="125px" alt=""> <?= $ranger["Power rangers"]  ?></td>
             <td><?= $ranger["Nb.d'épisodes"] ?></td>
             <td><?= $ranger["saisons"] ?></td>
             <td><?= $ranger["citations"] ?></td>
